@@ -8,7 +8,9 @@ app.use('/public', express.static('public'));
 app.get('/voitures', (req, res)=>{
     res.render('voitures.ejs', {pageTitle: "voitures"});
 });
-
+app.get('test', (req, res)=>{
+    console.log("test");
+});
 app.get('/services', (req, res)=>{
     res.render('services.ejs', {pageTitle: "services"});
 });
